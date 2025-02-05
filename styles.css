@@ -1,0 +1,269 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #000;
+}
+
+@font-face {
+    font-family: 'MarlinSoftBasic-Regular';
+    src: url(./Fonts/FontMesa\ -\ MarlinSoftBasic-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'MarlinSoftBasic-Regular';
+    font-size: 0.4em;
+}
+
+h1 {
+    font-family: 'CustomFont', sans-serif;
+    font-size: 2em;
+    /* Heading size will be 2 times the body font size */
+}
+
+p {
+    font-family: 'CustomFont', sans-serif;
+    font-size: 1em;
+    /* Paragraph size will be smaller than body font size */
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Left side of the navbar */
+.navbar-left .logo {
+    height: 40px;
+    /* Adjust based on logo size */
+}
+
+/* Right side of the navbar */
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right .request-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar-right .request-btn:hover {
+    background-color: #0056b3;
+}
+
+.navbar-right .profile-icon {
+    width: 30px;
+    /* Adjust size of the profile icon */
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 240px;
+    /* Width of the sidebar */
+    height: 100vh;
+    /* Full height of the screen */
+    background-color: #000;
+    /* Black background */
+
+    color: white;
+    padding: 10px;
+    position: fixed;
+    z-index: 1000;
+}
+
+/* Sidebar navigation links */
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    padding: 6px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the links */
+.sidebar ul li a:hover {
+    background-color: #34495e;
+}
+
+/* Gallery section */
+.gallery-section {
+    margin-top: 50px;
+}
+
+.gallery-section h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* Adjacent content area */
+.content {
+    margin-top: 20px;
+    margin-right: 20px;
+    overflow-y: auto;
+    margin-left: 250px;
+    /* Same width as sidebar to avoid overlap */
+    padding: 20px;
+    height: 50vh;
+    /* Full height of the screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+}
+
+/* Centered button styles */
+.centered-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    /* Add transition for the glow */
+}
+
+.centered-btn:hover {
+    background-color: #333;
+    /* Optional: Change background color on hover */
+    box-shadow: 0 0 10px 4px rgba(0, 255, 255, 0.7);
+    /* Glowing border */
+}
+
+/* CARDS */
+/* Container for the content */
+.container {
+    padding: 20px;
+    margin-left: 230px;
+}
+
+/* Content wrapper with flexbox */
+.content-wrapper {
+    display: flex;
+    /* Aligns the two content-blocks side by side */
+    gap: 20px;
+    /* Adds space between the two blocks */
+    margin-bottom: 20px;
+}
+
+/* Individual content block */
+.content-block {
+    display: flex;
+    align-items: center;
+    /* Vertically center the image and text */
+    gap: 20px;
+    /* Space between image and text */
+    flex: 1;
+    /* Makes each block take equal space */
+}
+
+/* Image style */
+.image img {
+    width: 300px;
+    /* Size of the image */
+    /* // height: auto; */
+    height: 140px;
+    border-radius: 8px;
+}
+
+/* Text style */
+.text {
+    flex: 1;
+    /* Ensures the text takes the remaining space */
+}
+
+.text h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.text p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Button style */
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.icon-container {
+    display: inline-block;
+}
+
+.icon-container i {
+    margin-right: 10px;
+    /* Optional: add space between icons */
+    font-size: 24px;
+    /* Increase the size of the icons */
+}
+
+/* .footer-text {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
+}
+
+.footer-text .row {
+    display: block;
+} */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-align: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.top-row,.bottom-row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+}
+
