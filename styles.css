@@ -188,6 +188,7 @@ p {
     flex: 1;
     /* Makes each block take equal space */
     background-color: rgb(53, 50, 50);
+    height: 171px;
 }
 
 /* Image style */
