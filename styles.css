@@ -83,12 +83,16 @@ p {
     /* Full height of the screen */
     background-color: #000;
     /* Black background */
-
+    display: flex;
     color: white;
     padding: 10px;
     position: fixed;
     z-index: 1000;
+    
     overflow: visible;
+    
+    border: 2px solid #ccc;
+    border-top: 1px solid black;  /* Adjust color as needed */
 }
 
 /* Sidebar navigation links */
@@ -182,14 +186,16 @@ p {
 .content-block {
     display: flex;
     align-items: center;
+    justify-content: center;
     /* Vertically center the image and text */
     gap: 20px;
-    border-radius: 5px;
+    border-radius: 4px;
     /* Space between image and text */
     flex: 1;
     /* Makes each block take equal space */
     background-color: rgb(53, 50, 50);
-    height: 171px;
+    height: 175px;
+    padding: 10px;
 }
 
 /* Image style */
@@ -198,8 +204,7 @@ p {
     /* Size of the image */
     /* // height: auto; */
     height: 130px;
-    border-radius: 8px;
-    margin-left: 5px;
+    margin: 0;
 }
 
 /* Text style */
@@ -280,4 +285,27 @@ p {
     width: 100%;
     justify-content: center;
     gap: 15px;
+}
+
+/* Horizontal Divider */
+.horizontal-divider {
+    width: 100%;
+    height: 0.9px;
+    /* Adjust the height as needed */
+    background-color: #ccc;
+    /* Change the color as needed */
+    margin-bottom: 15px;
+    /* Space below the divider */
+}
+
+.vertical-divider {
+    width: 2px;
+    
+    /* Adjust the width as needed */
+    height: 100%;
+    /* Full height of the content area */
+    background-color: #ccc;
+    /* Change the color as needed */
+    margin-right: 20px;
+    /* Space to the right of the divider */
 }
